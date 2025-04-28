@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #222;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.9); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    max-height: 90vh; /* Limit height to 90% of viewport height */
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #555;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #00ffff; /* Cyan accent color */
+}
+
+.tagline {
+    font-style: italic;
+    color: #aaa;
+}
+
+.info-section {
+    padding: 20px 0;
+    border-bottom: 1px solid #555;
+    cursor: pointer; /* Indicate clickable */
+    transition: max-height 0.3s ease-out;
+    max-height: 100px; /* Initially collapsed */
+    overflow: hidden;
+}
+
+.info-section.expanded {
+    max-height: 500px; /* Expand when clicked */
+}
+
+.info-section h2 {
+    color: #00ffff;
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
+.info-section h2:hover {
+    color: #00a0a0;
+}
+
+.job, .degree, .school, .reference {
+    margin-bottom: 15px;
+}
+
+.company, .university, .position {
+    font-weight: bold;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00a0a0;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    display: flex;
+    justify-content: space-between; /* Align skill name to the left and rating to the right */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    flex-grow: 1; /* Allow skill name to take up available space */
+    margin-right: 10px;
+}
+
+.skill-rating {
+    display: flex;
+    gap: 6px; /* Space between the dots */
+}
+
+.rating-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ddd; /* Light grey for empty dots */
+    display: inline-block;
+}
+
+.rating-dot.filled {
+    background-color: #00ffff; /* Cyan for filled dots (adjust to your preferred color) */
+}
+
+/* ... (Existing CSS) ... */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px; /* Space between buttons */
+}
+
+.action-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00ffff; /* Cyan button background */
+    color: #222; /* Dark text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.action-button:hover {
+    background-color: #00a0a0; /* Darker cyan on hover */
+    color: #fff;
+}
+/* ... (Existing CSS) ... */
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keep canvas behind content */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    z-index: 1; /* Ensure buttons are on top */
+    position: relative; /* Create a stacking context */
+}
+
+.action-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00ffff;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    position: relative; /* Create a stacking context */
+    z-index: 1; /* Ensure buttons are on top */
+}
+
+.action-button:hover {
+    background-color: #00a0a0;
+    color: #fff;
+}
+.action-button.blog {
+    background-color: #ff6600;
+}
+
+.action-button.blog:hover {
+    background-color: #cc5200;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 0.9em;
+    position: relative;
+    z-index: 1001 !important;
+}

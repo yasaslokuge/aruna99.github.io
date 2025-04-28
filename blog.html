@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css"> <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+        color: #eee;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+      }
+      .container {
+        width: 80%;
+        max-width: 960px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(34, 34, 34, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow-y: auto;
+        min-height: 80vh;
+      }
+      header {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #555;
+      }
+      header h1{
+        color: #00ffff;
+      }
+      main {
+        padding: 20px 0;
+      }
+      .article-card{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #555;
+      }
+      .article-card h2{
+        color:#00ffff;
+        margin-bottom: 10px;
+      }
+      .article-card p{
+        color: #ddd;
+      }
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+        color: #aaa;
+        font-size: 0.9em;
+        position: relative;
+        z-index: 1001 !important;
+      }
+      a{
+        color: #00ffff;
+        text-decoration: none;
+      }
+      a:hover{
+        color: #00a0a0;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Blog</h1>
+            <p>Research, Theories, and Ideas</p>
+        </header>
+        <main>
+            <div class="article-card">
+                <h2>Article Title 1</h2>
+                <p>Published Date: 2024-07-28</p>
+                <p>Summary: A brief overview of the first article.  This could be a summary of the research, a theoretical concept, or an initial exploration of an idea.  Include key points and the main takeaway for the reader.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article-card">
+                <h2>Article Title 2</h2>
+                <p>Published Date: 2024-07-25</p>
+                <p>Summary:  Explanation of the second article.  This section should entice the reader to delve deeper into the content.  Highlight any compelling arguments or novel findings.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="article-card">
+                <h2>Article Title 3</h2>
+                <p>Published Date: 2024-07-20</p>
+                <p>Summary: Summary or abstract of the third article. You may want to include a problem statement, methodology, and conclusion.</p>
+                <a href="#">Read More</a>
+            </div>
+        </main>
+        <footer>
+            <p>Created by Name Yasas</p>
+        </footer>
+    </div>
+</body>
+</html>
